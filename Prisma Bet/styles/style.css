@@ -1,0 +1,683 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3 {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+p, span, a, button, label, input {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+header {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem 0 4rem;
+    background-color: #151e32;
+    position: fixed;
+    z-index: 2;
+}
+header h2 {
+    color: #E9C579;
+}
+header .header-conteiner {
+    height: auto;
+    width: 26rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header .header-conteiner nav {
+    height: auto;
+    width: auto;
+}
+header .header-conteiner nav ul {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+header .header-conteiner nav ul li {
+    font-size: 10pt;
+}
+header .header-conteiner nav ul li a {
+    text-decoration: none;
+    color: #E9C579;
+    font-weight: bold;
+}
+header .header-conteiner nav ul li a:hover {
+    color: lightcyan;
+    text-decoration: underline;
+}
+header .header-conteiner .entrance {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+header .header-conteiner .entrance li button {
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    background-color: #035ba9;
+    color: lightcyan;
+    font-weight: bolder;
+    transition: background-color 0.5s ease, transform 0.5s ease
+}
+header .header-conteiner .entrance li button:hover {
+    transform: scale(1.1);
+    background-color: lightcyan;
+    color: #035ba9;
+}
+main {
+    height: auto;
+    width: 100%;
+}
+main #section-1 {
+    background-image: url('/assets/background.jpeg');
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15vh 4rem 0 4rem;
+    position: relative;
+}
+#section-1 img {
+    width: 40%;
+    z-index: 0;
+    position: absolute;
+    right: 8rem;
+}     
+#section-1 .conteiner-1 {
+    height: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#section-1 .conteiner-1 h1 {
+    font-size: 40pt;
+    font-weight: bold;
+    color: #E9C579;
+}
+#section-1 .conteiner-1 p {
+    font-size: 13pt;
+    line-height: 1.3;
+    color: lightcyan;
+}
+#section-1 .conteiner-1 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#section-1 .conteiner-1 ul li {
+    display: flex;
+    flex-direction: row;
+    font-size: 15pt;
+    gap: 1rem;
+    align-items: flex-end;
+}
+#section-1 .conteiner-1 ul li #i-1 {
+    color: greenyellow;
+}
+#section-1 .conteiner-1 ul li #i-2 {
+    color: lightskyblue;
+}
+#section-1 .conteiner-1 ul li #i-3 {
+    color: red;
+}
+#section-1 .conteiner-1 ul li p {
+    font-size: 10pt;
+}
+main #section-2 {
+    background-image: url('/assets/background-2.png');
+    background-size: cover;
+    background-repeat: repeat;
+    border-top: 1px solid rgba(212, 175, 55, 0.4);
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 4rem 3rem 4rem;
+    position: relative; 
+}
+#section-2 .comp-rate {
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(135deg, #101010, #1f1f1f, #181818);
+    border: 2px solid #E9C579;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+#section-2 .comp-rate h2 {
+    font-size: 2.5rem;
+    color: #E9C579;
+}
+#section-2 .comp-rate .rate {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#section-2 .comp-rate .rate li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.12);
+    gap: 1rem;
+    font-size: 13pt;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+#section-2 .comp-rate .rate li:hover {
+    transform: scale(1.1);
+}
+#section-2 .comp-rate .rate li .position {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #f1f1f1;
+    padding: 3px;
+    background: linear-gradient(145deg, #1a1a1a, #111);
+    border: 2px solid #d7b96b;
+}
+#section-2 .comp-rate .rate li .position i {
+    font-size: 1rem;
+}
+#section-2 .comp-rate .rate li .player {
+    font-size: 1rem;
+    color: #d7c68a;
+}
+#section-2 .comp-rate .rate li .points {
+    font-size: 1rem;
+    color: #cfcfcf;
+    margin-left: auto;
+}
+#section-2 .painel-games {
+    width: 65%;
+    height: 100%;
+    background: linear-gradient(135deg, #101010, #1f1f1f, #181818);
+    border: 2px solid #E9C579;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 2rem;    
+}
+#section-2 .painel-games .head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+}
+#section-2 .painel-games .head h2 {
+    font-size: 30pt;
+    color: #E9C579;       
+}
+#section-2 .painel-games .head .search-bar {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 45px;
+    background: #000;
+    border: 1px solid #d4b46b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#section-2 .painel-games .head .search-bar input {
+    flex: 1;
+    width: 90%;
+    padding: 0 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #d4b46b;
+    font-size: 1rem;
+}
+#section-2 .painel-games .head .search-bar .search {
+    width: 10%;
+    height: 100%;
+    border: none;
+    background: #E9C579;
+    cursor: pointer;
+}
+#section-2 .painel-games .games {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    gap: 2rem;
+    list-style: none;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.12);
+}
+#section-2 .painel-games .games .cards {
+    background: #222;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+#section-2 .painel-games .games .cards:hover {
+    transform: scale(1.1); 
+}
+#section-2 .painel-games .games .cards img {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+main #section-3 {
+    background: linear-gradient(140deg, #0b0b0b 0%, #101010 50%, #0b0b0b 100%);
+    border-top: 1px solid rgba(212, 175, 55, 0.4);
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 4rem 3rem 4rem;
+    position: relative;
+}
+#section-3 i {
+    font-size: 25rem;
+    width: 40%;
+    color: #E9C579;
+}
+#section-3 form {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    border-radius: 15px;
+    color: #d4af37;
+}
+#section-3 form .components label {
+    font-size: 15pt;
+    color: #e6d59c;
+    margin-bottom: 8px;
+    display: block;
+}
+#section-3 form .components input {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    background: rgba(10, 10, 10, 0.8);   
+    border: 1px solid rgba(212, 175, 55, 0.3); 
+    border-radius: 10px;
+    color: white;         
+    font-size: 12pt;
+    outline: none;
+}
+#section-3 form .components #select-val {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+#section-3 form .components select {
+    width: 4rem;
+    padding: 0.5rem 0.5rem;
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12pt;
+}
+#section-3 form .components select option {
+    background: #1a1a1a;
+    color: #f1d68a;
+    border: none;
+}
+#section-3 form .submit {
+    width: 30%;
+    padding: 1rem;
+    background: #d4af37;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    font-size: 15pt;
+    transition: background-color 0.4s ease, transform 0.2s ease;
+}
+#section-3 form .submit:hover {
+    transform: scale(1.05);
+}
+#section-3 form .submit:active {
+    transform: scale(0.95);
+}
+footer {
+    height: auto;
+    width: 100%;
+    background-image: url('/assets/background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 1px solid rgba(212, 175, 55, 0.4);
+}
+footer .conteiner-1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 4rem 3rem 4rem;
+    gap: 1rem;
+}
+.conteiner-1 h2 {
+    font-size: 18pt;
+    color: #E9C579;
+}
+.conteiner-1 p {
+    font-size: 13pt;
+    line-height: 1.3;
+    color: lightcyan;
+}
+footer .conteiner-2 {
+    width: 100%;
+    padding: 3rem 4rem 3rem 4rem;
+}
+footer .conteiner-2 .sub-conteiner {
+    width: 100%;
+    border-top: 1px solid #E9C579;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+.conteiner-2  .sub-conteiner p {
+    font-size: 10pt;
+    color: lightcyan;
+}
+.conteiner-2 .sub-conteiner p span {
+    font-size: 11pt;
+    color: #d4b46b;
+    font-weight: bolder;
+}
+.conteiner-2 .sub-conteiner button {
+    padding: 1rem;
+    border-radius: 15px;
+    border: 1px solid #151e32;
+    background-color: #035ba9;
+    color: lightcyan;
+    transition: background-color 0.5s ease, transform 0.5s ease
+}
+.conteiner-2 .sub-conteiner button:hover {
+    transform: scale(1.1);
+    background-color: lightcyan;
+    color: #035ba9;
+}
+
+@media (max-width: 1540px) {
+    #section-2 .comp-rate .rate li .position {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    #section-2 .comp-rate .rate li .player {
+        font-size: 0.75rem;
+    
+    }
+    #section-2 .comp-rate .rate li .points {
+        font-size: 0.75rem;
+    }
+    main #section-3 {
+        height: auto;
+    }
+    #section-3 form {
+        height: auto;
+        gap: 1rem;
+    }  
+}
+@media (max-width: 1260px) {
+    header {
+        padding: 0 3rem 0 3rem;
+    }
+    main #section-1 {
+        padding: 15vh 3rem 0 3rem;
+    }
+    main #section-2 {
+        height: auto;
+        padding: 3rem 3rem 3rem 3rem;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    #section-2 .comp-rate {
+        width: 60%;
+    }
+    #section-2 .comp-rate .rate {
+        gap: 1rem;
+    }
+    #section-2 .painel-games {
+        width: 80%;
+    }
+    main #section-3 {
+        padding: 3rem 3rem 3rem 3rem;
+    }
+    #section-3 i {
+        font-size: 20rem;
+    }
+    footer .conteiner-1 {
+        padding: 3rem 3rem 3rem 3rem;
+    }
+    footer .conteiner-2 {
+        padding: 3rem 3rem 3rem 3rem;
+    }
+}
+@media (max-width: 990px) {
+    #section-1 .conteiner-1 {
+        width: 60%;
+    }
+    #section-1 img {
+        right: 2rem;
+        width: 30%;
+    }
+    #section-3 i {
+        font-size: 15rem;
+    }
+}
+@media (max-width: 875px) {
+    header {
+        padding: 0 1rem 0 1rem;
+    }
+    header .header-conteiner {
+        width: 20rem;
+        gap: 1rem;
+    }
+    header .header-conteiner nav ul {
+        gap: 1rem;
+    }
+    header .header-conteiner .entrance li button  {
+        padding: 8px 10px 8px 10px;
+    }
+    main #section-1 {
+        padding: 15vh 2rem 0 2rem;
+    }
+    main #section-2 {
+        padding: 3rem 2rem 3rem 2rem;
+    }    
+    #section-2 .painel-games .head .search-bar {
+        width: 50%;
+    }
+    #section-2 .painel-games .head .search-bar input {
+        width: 85%;
+    }
+    #section-2 .painel-games .head .search-bar .search {
+        width: 15%;
+    }
+    main #section-3 {
+        padding: 3rem 2rem 3rem 2rem;
+    }
+    #section-3 form .submit {
+        width: 50%;
+    }
+    footer .conteiner-1 {
+        padding: 3rem 2rem 3rem 2rem;
+        width: 70%;
+    }
+    footer .conteiner-2 {
+        padding: 3rem 2rem 3rem 2rem;
+    }
+    .conteiner-2  .sub-conteiner p {
+        font-size: 6pt;     
+    }
+    .conteiner-2 .sub-conteiner p span {
+        font-size: 7pt;
+    }
+    .conteiner-2 .sub-conteiner button {
+        padding: 0.5rem;
+        font-size: 7pt;
+    } 
+}
+@media (max-width: 660px) {
+    main #section-1 {
+        height: auto;
+        flex-direction: column;
+        padding: 25vh 2rem 4rem 2rem;
+        gap: 3rem;
+    }
+    #section-1 .conteiner-1 {
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        z-index: 1;
+    }
+    #section-1 img {
+        right: 0;
+        bottom: -3rem;
+        width: 100%;
+        z-index: 0;
+        opacity: 0.4;
+    }
+    #section-2 .comp-rate {
+        width: 80%;
+    }
+    #section-2 .painel-games {
+        width: 85%;
+    }
+    #section-2 .painel-games .games {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 150px);
+    }
+    main #section-3 {
+        padding: 9rem 2rem 3rem 2rem;
+        justify-content: center;
+    }
+    #section-3 i {
+        width: 100%;
+        color: #E9C579;
+        position: absolute;
+        z-index: 0;
+        opacity: 0.4;
+        top: 1rem;
+    }
+    #section-3 form {
+        width: 70%;
+    }
+}
+@media (max-width: 600px) {
+    header {
+        height: 10vh;
+    }
+    header h2 {
+        font-size: 16px;
+    }
+    header .header-conteiner {
+        width: 15rem;
+    }
+    header .header-conteiner nav ul li {
+        font-size: 10px;
+    }
+    header .header-conteiner .entrance {
+        gap: 0.5rem;
+    }
+    header .header-conteiner .entrance li button {
+        padding: 5px 10px 5px 10px;
+        font-size: 10px;
+    }
+    #section-2 .comp-rate {
+        width: 100%;
+    }
+    #section-2 .painel-games {
+        width: 100%;
+    }
+    #section-3 form {
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    header .header-conteiner {
+        width: 13rem;
+    }
+    header .header-conteiner nav ul li {
+        font-size: 8px;
+    }
+    header .header-conteiner .entrance {
+        gap: 0.5rem;
+    }
+    header .header-conteiner .entrance li button {
+        padding: 4px 8px 4px 8px;
+        font-size: 8px;
+    }
+    #section-1 .conteiner-1 {
+        width: 100%;
+    }
+    #section-1 .conteiner-1 h1 {
+        font-size: 30pt;
+    }
+    #section-1 .conteiner-1 p {
+        font-size: 10pt;
+    }
+    #section-1 .conteiner-1 ul li {
+        font-size: 11pt;
+    }
+    #section-1 .conteiner-1 ul li p {
+        font-size: 7pt;
+    }
+    #section-2 .painel-games .games {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 150px);
+    }
+    #section-3 form .submit {
+        width: 50%;
+    }
+}

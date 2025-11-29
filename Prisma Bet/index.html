@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <title>PRISMA BET</title>
+</head>
+<body>
+    <header>
+        <h2>Prisma Bet</h2>
+        <div class="header-conteiner">
+            <nav>
+                <ul>
+                    <li><a href="#section-1">Inicial</a></li>
+                    <li><a href="#section-2">Jogos</a></li>
+                    <li><a href="#section-3">Resgate</a></li>
+                </ul>
+            </nav>
+            <ul class="entrance">
+                <li><a href="/detalhes.html"><button class="btn-1">Cads</button></a></li>
+                <li><a href="/detalhes.html"><button class="btn-2">Login</button></a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="section-1">
+            <img src="/assets/main-icon.png" alt="">
+            <div class="conteiner-1">
+                <h1>Seja o primeiro a encontrar o PRISMA</h1>
+                <p>Sua sorte nunca lhe deixaria na mão, aproveite essa enorme oportunidade e fique milionário</p>
+                <ul>
+                    <li>
+                        <i id="i-1" class="fa-solid fa-hand-holding-dollar"></i>
+                        <p>Ganhe muito dinheiro</p>
+                    </li>
+                    <li>
+                        <i id="i-2" class="fa-solid fa-clock"></i>
+                        <p>Aqui o horário sempre está bugado</p>
+                    </li>
+                    <li>
+                        <i id="i-3" class="fa-solid fa-gamepad"></i>
+                        <p>Aproveite uma infinidade de Jogos</p>
+                    </li>
+                </ul>               
+            </div>
+        </section>
+        <section id="section-2">
+            <div class="comp-rate">
+                <h2>Ranking</h2>
+                <ul class="rate">
+                    <li>
+                         <span class="position" id="primeiro"><i class="fa-solid fa-1"></i></span>
+                         <p class="player">Xaolin</p>
+                         <span class="points">R$50.000</span>
+                    </li>
+                    <li>
+                        <span class="position" id="segundo"><i class="fa-solid fa-2"></i></span>
+                         <p class="player">Dr. Who</p>
+                         <span class="points">R$49.000</span>
+                    </li>
+                    <li>
+                        <span class="position" id="terceiro"><i class="fa-solid fa-3"></i></span>
+                         <p class="player">Neymar</p>
+                         <span class="points">R$40.000</span>
+                    </li>
+                    <li>
+                        <span class="position" id="quarto"><i class="fa-solid fa-4"></i></span>
+                         <p class="player">Roger123</p>
+                         <span class="points">R$32.000</span>
+                    </li>
+                    <li>
+                        <span class="position" id="quinto"><i class="fa-solid fa-5"></i></span>
+                         <p class="player">Tech Falido</p>
+                         <span class="points">R$0,0009</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="painel-games">
+                <div class="head">
+                    <h2>Jogos</h2>
+                    <div class="search-bar">
+                        <input type="text">
+                        <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+                <ul class="games">
+                    <li class="cards">
+                        <img src="/assets/jogo-1.png" alt="">
+                        <div class="game-name"></div>
+                    </li>
+                    <li class="cards">
+                        <img src="/assets/jogo-2.png" alt="">
+                        <div class="game-name"></div>
+                    </li>
+                    <li class="cards">
+                        <img src="/assets/jogo-3.png" alt="">
+                        <div class="game-name"></div>
+                    </li>
+                    <li class="cards">
+                        <img src="/assets/jogo-4.png" alt="">
+                        <div class="game-name"></div>
+                    </li>
+                    <li class="cards">
+                        <img src="/assets/jogo-5.png" alt="">
+                        <div class="game-name"></div>
+                    </li>
+                    <li class="cards">
+                        <img src="/assets/jogo-6.png" alt="">
+                        <div class="game-name"></div>
+                    </li>
+                    <li class="cards">
+                        <img src="/assets/jogo-7.png" alt="">
+                        <div class="game-name"></div>
+                    </li>
+                    <li class="cards">
+                        <img src="/assets/jogo-8.avif" alt="">
+                        <div class="game-name"></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="section-3">
+            <i class="fa-solid fa-credit-card"></i>
+            <form action="">
+                <div class="components">
+                    <label for="num-card">Número do cartão</label>
+                    <input type="text" id="num-card">
+                </div>
+                <div class="components">
+                    <label for="num-impr-card">Número impresso do cartão</label>
+                    <input type="text" id="num-impr-card">
+                </div>
+                <div class="components" id="double-select">
+                    <label for="select-val">Validade do cartão:  dd/mm</label>
+                    <div id="select-val">
+                        <select class="dd">
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="5">05</option>
+                            <option value="6">06</option>
+                            <option value="7">07</option>          
+                        </select>
+                        <select class="mm">
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="5">05</option>
+                            <option value="6">06</option>
+                            <option value="7">07</option>  
+                        </select>
+                    </div>
+                </div>
+                <div class="components">
+                    <label for="cod-verif">código de verificação</label>
+                    <input type="text" id="cod-verif"> 
+                </div>
+                <button class="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="conteiner-1">
+            <h2>Prisma Bet</h2>
+            <p>Todos nós temos a chance de ficar rico, basta querer.</p>
+        </div>
+        <div class="conteiner-2">
+            <div class="sub-conteiner"> 
+                <p>Todos os direitos reservados 2025 - <span>Prisma Bet</span></p>
+                <a href="/assets/meme.jpeg"><button>Sair</button></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/83358cbe78.js" crossorigin="anonymous"></script>
+</html>
