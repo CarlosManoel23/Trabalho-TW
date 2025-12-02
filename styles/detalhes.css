@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;;
+}
+p, label , input {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;    
+}
+main {
+    height: 100vh;
+    width: 100%;
+    background-image: url('/assets/background-3.jpeg');
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main form {
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 16rem 2rem 2rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    border-radius: 15px;
+    color: #d4af37;
+}
+main form img {
+    width: 10rem;
+    position: absolute;
+    top: 3rem;
+}
+main form h1 {
+    top: 11rem;
+    position: absolute;
+}
+main form .components {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+main form .components label {
+    font-size: 15pt;
+    color: #e6d59c;
+    margin-right: 1rem;
+    display: block;
+}
+main form .components input {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    background: rgba(10, 10, 10, 0.8);   
+    border: 1px solid rgba(212, 175, 55, 0.3); 
+    border-radius: 10px;
+    color: white;         
+    font-size: 12pt;
+    outline: none;
+}
+main form #type-2 {
+    position: relative;
+}
+main form #type-2 i {
+    position: absolute;
+    right: 1rem;
+}
+main form .enter {
+    width: 10rem;
+    padding: 1rem;
+    background: #d4af37;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    font-size: 15pt;
+    transition: background-color 0.4s ease, transform 0.2s ease;
+}
+main form .enter:hover {
+    transform: scale(1.05);
+}
+main form .enter:active {
+    transform: scale(0.95);
+}
+@media (max-width: 900px) {
+    main form {
+        width: 70%;
+    }
+}
+@media (max-width: 540px) {
+    main form {
+        width: 90%;
+    }
+    main form .components input {
+        font-size: 9pt;
+    }
+}
