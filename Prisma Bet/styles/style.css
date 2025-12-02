@@ -154,7 +154,6 @@ main #section-2 {
     background-size: cover;
     background-repeat: repeat;
     border-top: 1px solid rgba(212, 175, 55, 0.4);
-    height: 85vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -164,7 +163,7 @@ main #section-2 {
 }
 #section-2 .comp-rate {
     width: 30%;
-    height: 100%;
+    height: auto;
     background: linear-gradient(135deg, #101010, #1f1f1f, #181818);
     border: 2px solid #E9C579;
     border-radius: 15px;
